@@ -1,15 +1,9 @@
-def is_prime(n):
-    if n <= 1:
-        return False
-    for i in range(2, int(n ** 0.5) + 1):
-        if n % i == 0:
-            return False
-    return True
+import datetime
 
-number = int(input("Enter a number: "))
+def convert_to_military_time():
+    current_time = datetime.datetime.now()
+    military_time = current_time.strftime("%H:%M:%S")
+    return military_time
 
-if is_prime(number):
-    print(number, "is a prime number")
-else:
-    print(number, "is not a prime number")
+    print(convert_to_military_time())
 
