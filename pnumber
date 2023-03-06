@@ -1,0 +1,10 @@
+import datetime
+
+def convert_to_military_time():
+    current_time = datetime.datetime.now()
+    military_time = current_time.strftime("%H:%M:%S")
+    return military_time
+
+    print(convert_to_military_time())
+
+
