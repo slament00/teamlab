@@ -7,3 +7,4 @@ def convert_to_military_time():
 
     print(convert_to_military_time())
 
+
